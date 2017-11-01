@@ -1,5 +1,4 @@
 <?php
-//include('../header.php');
 
 //il existe une built in function pour capitalize mais on peut faire sans :
 function firstCap ($str) {
