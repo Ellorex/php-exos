@@ -9,14 +9,16 @@ echo "<pre>";
 var_dump(getBestAverage($apprenants));
 echo "</pre>";
 ?>
-
-  <?php
+<!DOCTYPE html>
+<title><?=$title?></title>
+<?php
 
 include('header.php');
+
 ?>
 
 <h2>Liste des apprenants</h2>
-<!--
+
 <div class="row">
 <div class="col-md-9">
 
@@ -29,10 +31,10 @@ include('header.php');
     <th>Totem</th>
     <th>Dernière note</th>
     <th>Moyenne</th>
-  </tr> -->
+  </tr>
 
   <?php
-  /*foreach($apprenants as $a) {
+  foreach($apprenants as $a) {
     $getAverage = getAverage($a['notes']);
     echo '<tr>';
     echo '<td>' . firstCap($a['prenom']) . '</td>';
@@ -47,10 +49,12 @@ include('header.php');
       echo '<td>' . $getAverage . '</td>';
     }
     echo '</tr>';
-  }*/
+  }
   ?>
-<!-- </table>
+</table>
 </div>
-</div> -->
-</body>
-</html>
+</div>
+
+<?php
+include('sidebar.php');
+include('footer.php'); ?>
