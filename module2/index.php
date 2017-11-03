@@ -1,5 +1,6 @@
 <?php
 include('routes.php');
+include('assets/css/style.css');
 $db = new PDO('mysql:host=localhost;dbname=quizz;charset=utf8', 'root', 'paris');
 
 if (isset($_GET['route'])) {
